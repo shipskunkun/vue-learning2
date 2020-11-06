@@ -8,7 +8,8 @@ https://ke.sifou.com/course/1650000016221751?utm_source=recommend_web-live-new
 
 #### 课程大纲
 
-##### **第01章 Vue技术栈开发实战-使用vue-cli3创建项目**
+```
+##### 第01章 Vue技术栈开发实战-使用vue-cli3创建项目**
 
 - 使用Vue UI创建、管理项目
 - 项目结构目录整理
@@ -175,4 +176,6 @@ https://ke.sifou.com/course/1650000016221751?utm_source=recommend_web-live-new
 - Jenkins配置
 - Nginx配置
 
-**购买须知：**
+**购买须知：
+```
+
