@@ -69,7 +69,7 @@ export default {
     })
   },
   mounted() {
-    console.log(this.$store.state.router.routers);
+    // console.log(this.$store.state.router.routers);
   },
   methods: {
     ...mapActions([

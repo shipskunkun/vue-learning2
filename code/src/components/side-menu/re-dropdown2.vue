@@ -38,7 +38,7 @@ export default {
     }
   },
   mounted() {
-    console.log('drop_', this.parent)
+    // console.log('drop_', this.parent)
   },
   computed: {
     titleStyle () {

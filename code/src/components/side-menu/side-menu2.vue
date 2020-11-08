@@ -73,7 +73,7 @@ export default {
   },
   mounted() {
     
-    console.log('side-menu', this.list)
+    // console.log('side-menu', this.list)
   },
   computed: {
     ...mapState({
