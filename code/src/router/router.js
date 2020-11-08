@@ -1,5 +1,5 @@
 import Home from '@/views/Home.vue'
-import Layout from '@/views/layout.vue'
+import Layout from '@/views/layout2.vue'
 export const routerMap = [
   {
     path: '/home',
