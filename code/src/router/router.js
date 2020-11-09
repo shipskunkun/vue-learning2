@@ -187,7 +187,7 @@ export const routes = [
     meta: {
       title: '图标'
     },
-    component: () => import('@/views/icon_page.vue')
+    component: () => import('@/views/icon_page2.vue')
   },
   {
     path: '*',
