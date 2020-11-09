@@ -1,12 +1,12 @@
 <template>
   <div class="box">
     <!-- <Select v-model="selectData" style="width:200px">
-      <virtual-list :size="30" :remain="6">
+      <virtual-list :size="40" :remain="6">
         <Option v-for="item in list" :value="item.value" :key="item.value">{{ item.label }}</Option>
       </virtual-list>
     </Select>
     <Select v-model="selectData" style="width:200px">
-      <virtual-list :size="30" :remain="6">
+      <virtual-list :size="50" :remain="6">
         <Option v-for="item in list" :value="item.value" :key="item.value">{{ item.label }}</Option>
       </virtual-list>
     </Select>
@@ -20,7 +20,7 @@
         <Option v-for="item in list" :value="item.value" :key="item.value">{{ item.label }}</Option>
       </virtual-list>
     </Select> -->
-    <!-- <CheckboxGroup v-model="checkedArr">
+    <CheckboxGroup v-model="checkedArr">
       <virtual-list :size="30" :remain="10">
         <p v-for="item in list" :key="`check${item.value}`" style="height: 30px;">
           <Checkbox :label="item.value">
@@ -29,7 +29,7 @@
           </Checkbox>
         </p>
       </virtual-list>
-    </CheckboxGroup> -->
+    </CheckboxGroup>
   </div>
 </template>
 

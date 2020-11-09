@@ -1,9 +1,9 @@
 <template>
   <div class="form-wrapper">
-    <!-- <form-group :list="formList" :url="url"></form-group> -->
+    <form-group :list="formList" :url="url"></form-group>
     <Button @click="handleSubmit" type="primary">提交</Button>
     <Button @click="handleReset">重置</Button>
-    <form-single
+    <!-- <form-single
       ref="formSingle"
       v-for="(item, index) in formList"
       :key="`form_${index}`"
@@ -11,7 +11,7 @@
       :value-data="valueData"
       :rule-data="ruleData"
       :error-store="errorStore"
-    ></form-single>
+    ></form-single> -->
   </div>
 </template>
 
@@ -27,6 +27,8 @@ export default {
     FormSingle
   },
   data () {
+    
+    console.log(formData)
     return {
       url: '/data/formData',
       formList: formData,
@@ -35,6 +37,9 @@ export default {
       errorStore: {},
       initValueData: {}
     }
+  },
+  mounted() {
+    console.log(formData)
   },
   methods: {
     handleSubmit () {
