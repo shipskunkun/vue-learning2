@@ -176,6 +176,5 @@ https://ke.sifou.com/course/1650000016221751?utm_source=recommend_web-live-new
 - Jenkins配置
 - Nginx配置
 
-**购买须知：
 ```
 
