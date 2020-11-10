@@ -96,6 +96,11 @@ export const downloadFile = ({ url, params }) => {
   form.remove()
 }
 
+
+/**
+ * DocBlockr 插件
+ * 
+ */
 export const routeEqual = (route1, route2) => {
   const params1 = route1.params || {}
   const params2 = route2.params || {}
