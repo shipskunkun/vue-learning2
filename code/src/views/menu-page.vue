@@ -1,6 +1,6 @@
 <template>
   <div class="menu-box">
-    <!-- <a-menu>
+    <a-menu>
       <a-menu-item>1111</a-menu-item>
       <a-menu-item>2222</a-menu-item>
       <a-submenu>
@@ -12,13 +12,13 @@
           <a-menu-item>3333-22-22</a-menu-item>
         </a-submenu>
       </a-submenu>
-    </a-menu> -->
-    <a-menu>
+    </a-menu>
+    <!-- <a-menu>
       <template v-for="(item, index) in list">
         <a-menu-item v-if="!item.children" :key="`menu_item_${index}`">{{ item.title }}</a-menu-item>
         <re-submenu v-else :key="`menu_item_${index}`" :parent="item" :index="index"></re-submenu>
       </template>
-    </a-menu>
+    </a-menu> -->
   </div>
 </template>
 <script>
