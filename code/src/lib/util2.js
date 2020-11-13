@@ -18,6 +18,9 @@ export const getToken = (tokenName = 'token') => {
 //思路：遍历文件夹，拿到ID，再遍历文件，如果文件的所属文件夹id=当前文件夹ID，
 //放入当前ID所在的文件夹 的 children 中
 export const putFileInFolder = (folderList, fileList) => {
+  console.log(folderList)
+  console.log(fileList)
+
   const folderListCloned = clonedeep(folderList)
   const fileListCloned = clonedeep(fileList)
   return folderListCloned.map(folderItem => {
@@ -36,6 +39,33 @@ export const putFileInFolder = (folderList, fileList) => {
     return folderItem
   })
 }
+
+//我写的
+// 标识文件夹的是 id, 属于哪个文件夹的是 folder_id
+export const putFileInFolder2 = (folderList, fileList) => {
+  const folderListCloned = clonedeep(folderList)
+  const fileListCloned = clonedeep(fileList)
+
+  let f  = folderListCloned.map((item) => {
+    let folder_id = item.id;
+    let l = fileListCloned.length;
+    let i = fileListCloned.length
+    while (--i >= 0) {
+        if(fileListCloned[i].folder_id == folder_id) {
+          if(!item.children) {
+            item.children = []
+          }
+          const file = fileListCloned.splice(i, 1)[0]
+          file.title = file.name
+          item.children.push(file)
+        }
+    }
+    item.type = 'folder'
+    return item
+  })
+  return f
+}
+
 
 // 递归函数，参数，当前文件夹参数
 // 为啥要转换，因为上面函数中，最外侧的 folder 有可能是某个folder的 children，但是层级却在最外层
