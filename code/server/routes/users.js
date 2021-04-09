@@ -34,6 +34,7 @@ router.get('/authorization', (req, res, next) => {
           table_page: true,
           render_page: true,
           split_pane: true,
+          optimize: true,
           parent: true,
           child: true,
           named_view: true,

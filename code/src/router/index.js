@@ -40,10 +40,16 @@ router.beforeEach((to, from, next) => {
 
   const token = getToken()
   if (token) {
+    console.log('外部的rules', store.state.router.hasGetRules)
     if (!store.state.router.hasGetRules) {
       store.dispatch('authorization').then(rules => {
+
+        console.log('rules', rules)
+        
         store.dispatch('concatRoutes', rules).then(routers => {
           router.addRoutes(clonedeep(routers))
+
+          console.log('更新后的routers', routers)
           next({ ...to, replace: true })
         }).catch(() => {
           next({ name: 'login' })

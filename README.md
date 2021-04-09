@@ -14,7 +14,7 @@ http://v1.iviewui.com/docs/introduce
 
 #### 课程大纲
 
-```
+
 ##### 第01章 Vue技术栈开发实战-使用vue-cli3创建项目**
 
 - 使用Vue UI创建、管理项目
@@ -182,5 +182,5 @@ http://v1.iviewui.com/docs/introduce
 - Jenkins配置
 - Nginx配置
 
-```
+
 
