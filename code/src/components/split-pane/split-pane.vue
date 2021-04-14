@@ -54,11 +54,16 @@ export default {
       document.addEventListener('mouseup', this.handleMouseup)
       this.initOffset = event.pageX - event.srcElement.getBoundingClientRect().left
       this.canMove = true
+
+      console.log('initOffset', this.initOffset); //5
     },
     handleMousemove (event) {
       if (!this.canMove) return
       const outerRect = this.$refs.outer.getBoundingClientRect()
       let offsetPercent = (event.pageX - this.initOffset + this.triggerWidth / 2 - outerRect.left) / outerRect.width
+
+      console.log(event.pageX, this.initOffset, this.triggerWidth, outerRect.left);//299 5 8 0
+
       if (offsetPercent < this.min) offsetPercent = this.min
       if (offsetPercent > this.max) offsetPercent = this.max
       // this.$emit('input', offsetPercent)
